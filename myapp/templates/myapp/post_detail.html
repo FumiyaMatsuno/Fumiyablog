@@ -18,7 +18,8 @@
             <!-- Text -->
             <p class="card-text">{{ object.content }}</p>
             <!-- Button -->
-            <a href="{% url 'myapp:post_update' object.id %}" class="btn btn-primary">更新</a>
+            <a href="{% url 'myapp:post_update' object.pk %}" class="btn btn-primary">更新</a>
+            <a href="{% url 'myapp:post_delete' object.pk %}" class="btn btn-danger">削除</a>
 
           </div>
 
