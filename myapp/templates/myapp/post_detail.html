@@ -18,6 +18,8 @@
             <!-- Text -->
             <p class="card-text">{{ object.content }}</p>
             <!-- Button -->
+            <a class="btn" href="{% url 'myapp:like_add' object.pk %}" style="background-color:rgb(253, 165, 0); color:white;">お気に入りに入れる</a>
+            <hr>
             <a href="{% url 'myapp:post_update' object.pk %}" class="btn btn-primary">更新</a>
             <a href="{% url 'myapp:post_delete' object.pk %}" class="btn btn-danger">削除</a>
 
